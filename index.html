@@ -16,7 +16,7 @@
 <meta property="og:image" content="../uploads/seo/og_image/1200x630/og_image.jpg" />
 <meta property="og:description" content="Abidos Hotels" />
 <meta property="og:url" content="https://abidoshotels.com/">
-<link rel="icon" type="image/png" href="../front/images/favicon.png">
+<link rel="icon" type="image/png" href="img/logo.png">
 <link href="https://fonts.googleapis.com/css?family=Roboto:300,400&amp;display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Cairo:300,400,600,700&amp;display=swap&amp;subset=arabic" rel="stylesheet">
 <link href="../../../cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css" rel="stylesheet">
@@ -31,6 +31,7 @@
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-180302243-2"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -124,20 +125,20 @@
   	  	    <div class="banner_cont">
         <div class="home-slider">
                             <div class="slider-item">
-                    <img src="../uploads/banner/image/2000x1030/home-banner-4-min-min.jpg" alt="Luxury at its finest! " title="Luxury at its finest! " class="" />                    <div class="slider-shadow"></div>
+                    <img src="img/bg20.jpg" alt="Luxury at its finest! " title="Luxury at its finest! " class="" />                    <div class="slider-shadow"></div>
                     <div class="slider-text">
                                                     <div class="slider-text-small">Relax and reward yourself with a royal treat</div>
                                                 <div class="slider-text-main">Luxury at its finest!</div>
-                                                    <a class="slider-read-more" href="https://royalmhotels.com/abudhabi/rooms">
+                                                    <a class="slider-read-more" href="#">
                                 Read more                            </a>
                                             </div>
                 </div>
                             <div class="slider-item">
-                    <img data-src="https://royalmhotels.com/abudhabi/uploads/banner/image/2000x1030/home-banner-1-min.jpg" alt="Luxury at its finest! " title="Luxury at its finest! " class=" lazy" />                    <div class="slider-shadow"></div>
+                    <img src="img/bg24.jpg" alt="Luxury at its finest! " title="Luxury at its finest! " class=" lazy" />                    <div class="slider-shadow"></div>
                     <div class="slider-text">
                                                     <div class="slider-text-small">Relax and reward yourself with a royal treat</div>
                                                 <div class="slider-text-main">Luxury at its finest!</div>
-                                                    <a class="slider-read-more" href="https://royalmhotels.com/abudhabi/rooms">
+                                                    <a class="slider-read-more" href="#">
                                 Read more                            </a>
                                             </div>
                 </div>
@@ -146,7 +147,7 @@
                     <div class="slider-text">
                                                     <div class="slider-text-small">Relax and reward yourself with a royal treat</div>
                                                 <div class="slider-text-main">Luxury at its finest!</div>
-                                                    <a class="slider-read-more" href="https://royalmhotels.com/abudhabi/rooms">
+                                                    <a class="slider-read-more" href="#">
                                 Read more                            </a>
                                             </div>
                 </div>
@@ -155,7 +156,7 @@
                     <div class="slider-text">
                                                     <div class="slider-text-small">Relax and reward yourself with a royal treat</div>
                                                 <div class="slider-text-main">Luxury at its finest!</div>
-                                                    <a class="slider-read-more" href="https://royalmhotels.com/abudhabi/rooms">
+                                                    <a class="slider-read-more" href="#">
                                 Read more                            </a>
                                             </div>
                 </div>
@@ -164,73 +165,18 @@
                     <div class="slider-text">
                                                     <div class="slider-text-small">Relax and reward yourself with a royal treat</div>
                                                 <div class="slider-text-main">Luxury at its finest!</div>
-                                                    <a class="slider-read-more" href="https://royalmhotels.com/abudhabi/rooms">
+                                                    <a class="slider-read-more" href="#">
                                 Read more                            </a>
                                             </div>
                 </div>
                     </div>
-        <div class="booking-form-cont">
-    <div class="booking-form">
-        <form action="https://royalmhotels.com/abudhabi/en/booking/validate" class="form-validator" id="ExtBookinForm" method="post" accept-charset="utf-8">
-
-<input type="hidden" name="section" value="1" />
-        <div class="row">
-                    <div class="col-md-12">
-                        <div class="messages"></div>
-                    </div>
-                </div>
-            <div class="booking-elements">
-                <div class="booking-element active">
-                    <label>Check in</label>
-                    <div class="date-label date-picker-popup" data-inputtarget="checkin_date">
-                        <span class="day"></span>
-                        <div class="month"></div>
-                    </div>
-                    <input type="hidden" name="checkin_date" value="2021-08-29">
-                </div>
-                <div class="booking-element">
-                    <label>Check out</label>
-                    <div class="date-label date-picker-popup" data-inputtarget="checkout_date">
-                        <span class="day"></span>
-                        <div class="month"></div>
-                    </div>
-                    <input type="hidden" name="checkout_date" value="2021-08-30">
-                </div>
-                <div class="booking-element">
-                    <label>Rooms</label>
-                    <div class="number-input">
-                        <input type="integer" name="numberofrooms" value="1" onfocus="this.select();">
-                        <span class="arrow up" onclick="increaseqty(this)"><i class="fas fa-chevron-up"></i></span>
-                        <span class="arrow down" onclick="decreaseqty(this)"><i class="fas fa-chevron-down"></i></span>
-                    </div>
-                </div>
-                <div class="booking-element">
-                    <label>Adults</label>
-                    <div class="number-input">
-                        <input type="integer" name="numberofadults" value="1" onfocus="this.select();">
-                        <span class="arrow up" onclick="increaseqty(this)"><i class="fas fa-chevron-up"></i></span>
-                        <span class="arrow down" onclick="decreaseqty(this)"><i class="fas fa-chevron-down"></i></span>
-                    </div>
-                </div>
-                <div class="booking-element">
-                    <label>Children</label>
-                    <div class="number-input">
-                        <input type="integer" name="numberofchildren" value="0" onfocus="this.select();" onkeyup="checkChildren(this)">
-                        <span class="arrow up" onclick="increaseqty(this)"><i class="fas fa-chevron-up"></i></span>
-                        <span class="arrow down" onclick="decreaseqty(this)"><i class="fas fa-chevron-down"></i></span>
-                    </div>
-                    <div class="ages" style="display: none;"></div>
-                </div>
-            </div>
-            <input type="submit" class="btn align-right" value="Book now" />
-        </form>    </div>
-</div>    </div>
+           </div>
 <div class="section_aboutus">
     <div class="container_m">
       
         <div class="row">
             <div class="col-md-6">
-              <h1 class="section_aboutus_h1">Welcome To Royal M Abu Dhabi</h1>
+              <h1 class="section_aboutus_h1">Welcome To Abidos Hotel Apartment </h1>
         <div class="slogan-text">Experience Luxury Beyond Compare</div>
                 <div class="description">
                     <p>
@@ -240,13 +186,15 @@
 <p>
 	From the moment you set foot in the hotel, you know you are taking the first steps on a truly unique journey. A magnificent colonnade frames the impressive Marina view through into the lobby, where the hotel&#39;s elegant modern style reveals itself further.</p>
 <p>
-	Relax. You&#39;ve arrived. Your new, Royal M lifestyle is just beginning.</p>                </div>
+	Relax. You&#39;ve arrived. Your new, Abidos lifestyle is just beginning.</p>                </div>
+<br><br>
+    <a href="https://be.synxis.com/?chain=14417&start=availresults&shell=flex&template=flex&hotel=57855&arrive=08%2f29%2f2021&nights=1&adult=1&child=0&promo="><input type="submit" class="btn align-right" value="Book now" /></a>
             </div>
             
             <div class="col-md-6 home_iframe">
-                <div class="description">
-             
-                </div>
+                <div class="rooms_img addImgEffect">
+                    <a href="dining.html">                                        <img src="img/bg10.jpg" alt="Dining" title="Dining" class=" lazy" />                                        </a>                                    </div>
+            </div>
             </div>
         </div>
     </div>
@@ -293,7 +241,7 @@
 	Experience royalty in our deluxe rooms at Royal M Hotel and Resort &ndash; enjoy the scenic view from your windows, fashionable interiors, complete amenities, and customer service that makes you feel at home.</p>                                        </div>
                                         <div class="btns_rooms">
                                                                                             <a href="rooms.html">Details</a> 
-                                                                                                                                        <a href="rooms.html" target="_blank">Book now</a> 
+                                                                                                                                        <a href="https://be.synxis.com/?chain=14417&start=availresults&shell=flex&template=flex&hotel=57855&arrive=08%2f29%2f2021&nights=1&adult=1&child=0&promo=" target="_blank">Book now</a> 
                                                                                     </div>
                                     </div>
                                 </div>
@@ -444,9 +392,7 @@ z-index:0;}
         </button>
 
       </div>
-      <div class="modal-body">
-       <img src="../front/images/covid.jpg" />
-      </div>
+      
    
     </div>
   </div>
@@ -487,21 +433,21 @@ z-index:0;}
         </div>
         <div class="footer_blks">
                   <div class="col-md-5  footer_col_1">
-                        <div id="TA_cdsscrollingravenarrow957" class="TA_cdsscrollingravenarrow"><ul id="zIVXpie6" class="TA_links Dpv0kS"><li id="SsJcQ7dHG" class="7pLnXSxa"><a target="_blank" href="https://www.tripadvisor.ca/Hotel_Review-g294013-d14964978-Reviews-Royal_M_Hotel_And_Resort-Abu_Dhabi_Emirate_of_Abu_Dhabi.html"><img src="https://static.tacdn.com/img2/brand_refresh/Tripadvisor_lockup_vertical.svg" alt="TripAdvisor" class="widEXCIMG" id="CDSWIDEXCLOGO"/></a></li></ul></div><script async src="https://www.jscache.com/wejs?wtype=cdsscrollingravenarrow&amp;uniq=957&amp;locationId=14964978&amp;lang=en_CA&amp;border=true&amp;display_version=2" data-loadtrk onload="this.loadtrk=true"></script>
+                        
                       
-                   <h4 class="f_title">Royal M Abu Dhabi</h4>
+                   <h4 class="f_title">Abidos Hotel</h4>
                 <div class="footer_content">
                     <div class="footer_row">
                         <p>
-	Royal M Hotel &amp; Resort P.O.Box: 62500 Al Bateen Marina, Abu Dhabi, UAE</p>                    </div>
+                            Abidos Hotel Apartment  Al Barsha &amp; Dubailand P.O. Box 450605 AAl Barsha, Dubai, UAE</p>                    </div>
                                             <div class="footer_row">
-                            <a href="https://g.page/RoyalMHotelAbuDhabi?share" target="_blank"><i class="fa fa-map-marker"></i> View Map</a>
+                            <a href="#" target="_blank"><i class="fa fa-map-marker"></i> View Map</a>
                         </div>
                                         <div class="footer_row phone_row">
-                        <a class="ltr_m" href="tel:97127771000">+971 2 777 1000</a>
+                        <a class="ltr_m" href="tel:97143164040">+971 4 316 4040</a>
                     </div>
                     <div class="footer_row">
-                        <a class="ltr_m" href="mailto:info.rmad@royalmhotels.com">info.rmad@royalmhotels.com</a>
+                        <a class="ltr_m" href="mailto:info@abidoshotels.com">info@abidoshotels.com</a>
                     </div>
                 </div>
             </div>
@@ -511,16 +457,36 @@ z-index:0;}
                     <div class="footer_row">
                         Sign up to receive marketing and promotional materials                    </div>
                     <div class="newsleter_form">
-                        <form action="https://royalmhotels.com/abudhabi/en/newsletter/subscribe" class="form-validator" id="NewsletterSubscribeForm" method="post" accept-charset="utf-8">
+                        <form id="submit-form" action="" >
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="messages"></div>
                             </div>
                         </div>
                             <div class="form-field">
-                                <input type="text" name="subscriberemail" value="" placeholder="Enter your email">
+                                <input type="text" name="subscriberemail" value="" placeholder="Enter your email" required="">
                             </div>
                             <input type="submit" class="btn2" value="SUBSCRIBE">
+
+                            <script>
+                                $("#submit-form").submit((e)=>{
+                                e.preventDefault()
+                                $.ajax({
+                                url:"https://script.google.com/macros/s/AKfycbwE41D00_MQX0bpcvPTy2WLeMWz32asEfM7vLzuDZpMcEDqRkBVT8Mtow/exec",
+                                data:$("#submit-form").serialize(),
+                                method:"post",
+                                success:function (response){
+                                alert("Form submitted successfully")
+                                window.location.reload()
+                                //window.location.href="https://google.com"
+                                },
+                                error:function (err){
+                                alert("Something Error")
+                                
+                                }
+                                })
+                                })
+                                </script>
                         </form>
                     </div>
                 </div>
@@ -531,27 +497,26 @@ z-index:0;}
                     <div class="footer_social_media">
                         <ul>
                                                             <li>
-                                    <a href="https://www.facebook.com/Royal-M-Hotel-Abu-Dhabi-2209923672661829/" target="_blank">
+                                    <a href="https://www.facebook.com/" target="_blank">
                                         <i class="social_icon fb"></i>
                                     </a>
                                 </li>
                                                                                         <li>
-                                    <a href="https://www.instagram.com/royalmabudhabi/" target="_blank">
+                                    <a href="https://www.instagram.com/" target="_blank">
                                         <i class="social_icon instagram"></i>
                                     </a>
                                 </li>
                                                                                 </ul>
                     </div>
                     
-                    <a href="https://visitabudhabi.ae/" class="visitabudhabi_logo" target="_blank"><img src="../front/images/abudhabi_logo.png" /></a>
+                    
                 </div>
             </div>
         </div>
     </div>
     <div class="copy_r">
-        <div class="copy_r_txt">©2021 Royal M Hotels & Resorts </div>
-        <span class="footer_divider">|</span>
-        <div class="copy_r_txt"> By <a href="https://dowgroup.com/">Dow Group</a></div>
+        <div class="copy_r_txt">©2021 Abidos Hotel </div>
+        
     </div>
 </div>
   </div>
@@ -593,7 +558,7 @@ var datepicker_tra = {
  var agemax = 12;
  var agemax_errormsg = 'One or more age is more than 12 years old';
 </script> 
-<script src="https://www.youtube.com/player_api"></script>
+
 <script defer src="../../../code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 <script src="../front/js/jquery-1.11.1.min.js"></script>
 <script defer src="../../../maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
